@@ -1,6 +1,6 @@
-# Astro Starter
+# Astro Alpha
 
-(Almost) unopinionated, unstyled Astro starter, useful for quick prototypes and theme creation.
+Bold, but minimal blog theme for Astro.
 
 ## Getting Started
 
@@ -19,17 +19,3 @@ npm run dev
 * SEO
 * Favicon
 * Vue integration
-
-## DevEx 
-
-* ESLint
-* Prettier
-* Stylelint
-* TS configuration
-* CI (via GH actions)
-
-## Customization
-
-* Fonts (Google Fonts)
-* Colors (CSS variables)
-* Analytics (`astro-analytics`)
