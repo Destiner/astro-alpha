@@ -6,7 +6,15 @@
   ],
   "rules": {
     "string-quotes": "single",
-    "media-feature-name-allowed-list": ["max-width", "min-width", "prefers-color-scheme"],
+    "property-no-vendor-prefix": [
+      true,
+      { "ignoreProperties": "backdrop-filter" }
+    ],
+    "media-feature-name-allowed-list": [
+      "max-width",
+      "min-width",
+      "prefers-color-scheme"
+    ],
     "declaration-colon-newline-after": null,
     "value-list-comma-newline-after": null
   }
