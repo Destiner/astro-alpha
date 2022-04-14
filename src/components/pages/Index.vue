@@ -25,7 +25,7 @@ defineProps({
 </script>
 
 <style scoped>
-main {
-  margin: 0 16px;
+h1 {
+  margin-bottom: 3rem;
 }
 </style>

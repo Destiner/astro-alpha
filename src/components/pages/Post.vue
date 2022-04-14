@@ -3,6 +3,7 @@
   <main>
     <article>
       <h1>{{ title }}</h1>
+      <div class="date">Published on {{ formatDate(date) }}</div>
       <slot />
     </article>
   </main>
@@ -14,9 +15,14 @@
   lang="ts"
 >
 import HeaderNav from '@/components/HeaderNav.vue';
+import formatDate from '@/utils/formatting';
 
 defineProps({
   title: {
+    type: String,
+    required: true,
+  },
+  date: {
     type: String,
     required: true,
   },
@@ -36,5 +42,11 @@ article {
 
 article img {
   max-width: 100%;
+}
+
+.date {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 </style>

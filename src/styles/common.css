@@ -1,30 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@400&family=Staatliches&display=swap');
 
 :root {
-  --bg: #fff;
-  --text: #111;
-  --link: #4f4fff;
+  --bg: white;
+  --bg-code: #f7f7f7;
+  --bg-cta: #dee3ea;
+  --text-primary: #222;
+  --text-secondary: #6b7280;
+  --text-code: #222;
+  --brand: #002147;
+  --outline: #f3f4f6;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #111;
-    --text: #ddd;
-    --link: #aac6ff;
+    --bg: #040411;
+    --bg-code: #1c1e28;
+    --bg-cta: #041228;
+    --text-primary: #e5e5e5;
+    --text-secondary: #bfbfbf;
+    --text-code: #eee;
+    --brand: #006eed;
+    --outline: #232323;
   }
 }
 
 body {
   margin: 0;
   background: var(--bg);
-  color: var(--text);
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  color: var(--text-primary);
+  font-family: Sarabun, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
   line-height: 1.6;
+}
+
+main {
+  max-width: 48rem;
+  margin: 8rem auto 2rem;
+}
+
+@media (max-width: 768px) {
+  main {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+  }
 }
 
 footer {
   height: 32px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-family: Staatliches, system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1;
 }
 
 a {

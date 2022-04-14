@@ -3,7 +3,7 @@ import HeadBase from '@/components/HeadBase.astro';
 import PostPage from '@/components/pages/Post.vue';
 
 const { content } = Astro.props;
-const { title, description } = content;
+const { title, date, description } = content;
 const pageTitle = `${title} | The Press`;
 ---
 
@@ -12,7 +12,7 @@ const pageTitle = `${title} | The Press`;
     <HeadBase title={pageTitle} {description} />
   </head>
   <body>
-    <PostPage {title}>
+    <PostPage {title} {date} >
       <slot />
     </PostPage>
   </body>
