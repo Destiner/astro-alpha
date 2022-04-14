@@ -1,0 +1,21 @@
+---
+import HeadBase from '@/components/HeadBase.astro';
+import IndexPage from '@/components/pages/Index.vue';
+
+const allPosts = await Astro.glob<PostMetadata>('./post/*.md');
+const posts = allPosts
+  .filter((post) => {
+    const isScheduled = new Date(post.frontmatter.date).getTime() > Date.now();
+    return !isScheduled;
+  })
+  .sort((a, b) => new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime());
+---
+
+<html lang="en">
+  <head>
+    <HeadBase title="The Press" desciption="A blog about the history of publishing" />
+  </head>
+  <body>
+    <IndexPage {posts} />
+  </body>
+</html>

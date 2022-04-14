@@ -1,0 +1,19 @@
+---
+import HeadBase from '@/components/HeadBase.astro';
+import PostPage from '@/components/pages/Post.vue';
+
+const { content } = Astro.props;
+const { title, description } = content;
+const pageTitle = `${title} | The Press`;
+---
+
+<html lang="en">
+  <head>
+    <HeadBase title={pageTitle} {description} />
+  </head>
+  <body>
+    <PostPage {title}>
+      <slot />
+    </PostPage>
+  </body>
+</html>

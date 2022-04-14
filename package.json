@@ -1,0 +1,46 @@
+{
+  "name": "starter-astro",
+  "version": "1.0.0",
+  "description": "ethers.js-compatible wrapper around Multicall",
+  "author": "Timur Badretdinov <destinerx@gmail.com>",
+  "keywords": [
+    "ethers",
+    "ethereum"
+  ],
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "lint": "npm run lint:prettier && npm run lint:eslint && npm run lint:stylelint",
+    "lint:prettier": "prettier -c \"src/**/*.{json,js,ts,vue}\"",
+    "lint:eslint": "eslint \"src/**/*.{js,ts,vue}\"",
+    "lint:stylelint": "stylelint \"src/**/*.{css,vue}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Destiner/starter-astro.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@astrojs/sitemap": "^0.1.0",
+    "@astrojs/vue": "^0.1.1",
+    "@types/luxon": "^2.3.1",
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "@typescript-eslint/parser": "^5.19.0",
+    "astro": "^1.0.0-beta.8",
+    "astro-analytics": "^2.1.1",
+    "eslint": "^8.13.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-vue": "^8.6.0",
+    "luxon": "^2.3.1",
+    "prettier": "^2.6.2",
+    "stylelint": "^14.6.1",
+    "stylelint-config-property-sort-order-smacss": "^9.0.0",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard": "^25.0.0",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3",
+    "vue": "^3.2.32",
+    "vue-tsc": "^0.34.5"
+  }
+}
